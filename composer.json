@@ -1,0 +1,16 @@
+{
+	"name": "r-tk/base-php-project-example",
+	"description": "Base PHP project example",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Raul Raat",
+			"role": "Developer"
+		}
+	],
+	"require-dev": {
+		"phpunit/phpunit": "*",
+		"r-tk/rtk-coding-standard": "*"
+	}
+}
