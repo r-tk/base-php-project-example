@@ -1,12 +1,13 @@
 version: '2'
 services:
-  nginx:
-    image: nginx
+  httpd:
+    image: httpd:2.4-alpine
     ports:
       - "8080:80"
     volumes:
       - .:/www
-      - ./config/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./config/httpd.conf:/usr/local/apache2/conf/httpd.conf
+    working_dir: /www
     links:
       - fpm 
   fpm:
