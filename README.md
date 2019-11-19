@@ -1,4 +1,13 @@
 # Base PHP project example
 
-## composer install
+## Install
+````
+composer install --prefer-dist
+````
+or via Docker
+```
 docker run --rm -v $(pwd):/app composer update --prefer-dist
+```
+
+## Reference
+  - https://composer.rarst.net/recipe/site-stack/

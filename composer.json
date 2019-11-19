@@ -1,16 +1,38 @@
 {
-	"name": "r-tk/base-php-project-example",
-	"description": "Base PHP project example",
+	"name": "r-tk/base-wordpress-project-example",
+	"description": "Test project for WordPress",
 	"type": "project",
-	"license": "MIT",
 	"authors": [
 		{
 			"name": "Raul Raat",
 			"role": "Developer"
 		}
 	],
-	"require-dev": {
-		"phpunit/phpunit": "*",
-		"r-tk/rtk-coding-standard": "*"
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "https://wpackagist.org"
+		}
+	],
+	"config": {
+		"vendor-dir": "wp-content/vendor"
+	},
+	"require": {
+		"johnpbloch/wordpress": ">=4.9",
+		"rarst/fragment-cache": "^1.3",
+		"rarst/update-blocker": "^1.1"
+	},
+	"require-dev" : {
+		"rarst/laps": "^1.4.4",
+		"rarst/toolbar-theme-switcher": "^1.5",
+		"wpackagist-plugin/a-fresher-cache": "*",
+		"wpackagist-plugin/core-control": "*",
+		"wpackagist-plugin/monster-widget": "*",
+		"wpackagist-plugin/theme-check": "*",
+		"wpackagist-plugin/user-switching": "*",
+		"wpackagist-plugin/wcm-user-language-switcher": "*"
+	},
+	"extra": {
+		"wordpress-install-dir": "wp"
 	}
 }
