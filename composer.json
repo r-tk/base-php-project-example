@@ -30,9 +30,13 @@
 		"wpackagist-plugin/monster-widget": "*",
 		"wpackagist-plugin/theme-check": "*",
 		"wpackagist-plugin/user-switching": "*",
-		"wpackagist-plugin/wcm-user-language-switcher": "*"
+		"wpackagist-plugin/wcm-user-language-switcher": "*",
+		"wp-coding-standards/wpcs": "^2.2"
 	},
 	"extra": {
 		"wordpress-install-dir": "wp"
+	},
+	"scripts": {
+		"phpcs": "phpcs"
 	}
 }
