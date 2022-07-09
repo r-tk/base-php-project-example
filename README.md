@@ -1,4 +1,6 @@
 # Base PHP project example
 
 ## composer install
-docker run --rm -v $(pwd):/app composer update --prefer-dist
+```
+docker-compose run --rm composer update --prefer-dist
+```
