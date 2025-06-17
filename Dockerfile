@@ -12,3 +12,9 @@ COPY --from=composer:2.2 /usr/bin/composer /usr/bin/composer
 
 ENTRYPOINT [ "composer" ]
 CMD [ "install", "--no-interaction", "--prefer-dist" ]
+
+FROM base AS phpcs
+
+WORKDIR /app
+
+ENTRYPOINT [  "php", "vendor/bin/phpcs" ]
