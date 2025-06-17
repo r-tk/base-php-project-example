@@ -2,7 +2,7 @@
 
 ## composer install
 ```
-docker compose run --rm composer update --prefer-dist
+docker compose run --rm composer
 ```
 
 ## linting
